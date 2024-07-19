@@ -1,0 +1,157 @@
+.hero
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 30px
+    margin-top: 80px
+    padding: 20px
+
+    &-text
+        display: flex
+        align-items: flex-start
+        align-content: start
+        flex-direction: column
+        max-width: 780px
+        gap: 15px
+        &-top
+            font-family: Poppins
+            font-size: 24px
+            font-weight: 600
+            line-height: 36px
+            letter-spacing: 0.03em
+            text-align: left
+
+        &-title
+            color: #FD6F00
+            font-family: Poppins
+            font-size: 32px
+            font-weight: 600
+            line-height: 48px
+            letter-spacing: 0.03em
+            text-align: left
+
+        &-specialty
+            font-family: Poppins
+            font-size: 100px
+            font-weight: 700
+            line-height: 120px
+            letter-spacing: 0.03em
+            text-align: left
+
+            display: grid
+            grid-template-columns: 1fr
+            grid-template-rows: auto auto
+
+        &-span
+            font-family: Poppins
+            font-size: 100px
+            font-weight: 700
+            line-height: 120px
+            letter-spacing: 0.03em
+            text-align: left
+            margin-left: 300px
+
+        &-description
+            max-width: 680px
+            font-family: Poppins
+            font-size: 21px
+            font-weight: 400
+            line-height: 31.5px
+            letter-spacing: 0.03em
+            text-align: justified
+
+    &-btn
+        margin-top: 22px
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1)
+    &-right
+        display: flex
+        align-items: center
+        align-content: center
+        flex-direction: column
+        gap: 20px
+        &-circle
+            width: 430px
+            height: 430px
+            border: 5px solid #FF8233
+            border-radius: 50%
+            overflow: hidden
+            &-img
+                object-fit: cover
+                width: 450px
+                height: 450px
+@media (max-width: 1240px)
+    .hero
+        grid-template-columns: 1fr
+        gap: 30px
+        margin-top: 50px
+        padding: 10px
+        text-align: center
+
+        &-text
+            margin-left: 0
+            align-items: center
+            max-width: 100%
+
+            &-span
+                margin-left: 0
+
+        &-right
+            &-circle
+                width: 400px
+                height: 400px
+
+                &-img
+                    width: 420px
+                    height: 420px
+
+@media (max-width: 768px)
+    .hero
+        margin-top: 50px
+        gap: 20px
+
+        &-text
+            &-top, &-title, &-specialty, &-description
+                font-size: 18px
+                line-height: 27px
+
+            &-specialty, &-span
+                font-size: 50px
+                line-height: 60px
+
+            &-description
+                font-size: 16px
+                line-height: 24px
+
+        &-right
+            &-circle
+                width: 300px
+                height: 300px
+
+                &-img
+                    width: 320px
+                    height: 320px
+
+@media (max-width: 480px)
+    .hero
+        gap: 10px
+
+        &-text
+            &-top, &-title, &-specialty, &-description
+                font-size: 16px
+                line-height: 24px
+
+            &-specialty, &-span
+                font-size: 40px
+                line-height: 50px
+
+            &-description
+                font-size: 14px
+                line-height: 21px
+
+        &-right
+            &-circle
+                width: 200px
+                height: 200px
+
+                &-img
+                    width: 220px
+                    height: 220px
